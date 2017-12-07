@@ -41,5 +41,10 @@ jobs:
       # run tests!
       - run: gradle test
 
+      - run: gradle build
+
+      - store_artifacts:
+          path: build/libs/gradle-test-1.0-SNAPSHOT.jar
+
 
 
